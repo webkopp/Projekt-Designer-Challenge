@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-font-black: #000;
+    --color-font-header: #0B0C17;
+    --color-link-button: #FF3571;
+    --color-font-forms: #757575;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+}
+
+/* header */
+
+header {
+    position: relative;
+    height: 60vh;
+}
+
+.logo {
+    margin: 3em;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+}
+
+.headline {
+    font-family: 'Roboto-Bold';
+    font-size: 2em;
+    color: var(--color-font-header);
+}
+
+.subline {
+    font-family: 'Roboto';
+    font-size: 1em;
+    color: var(--color-font-header);
+}
+
+.illu1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 1;
+}
+
+.illu2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: -1;
+}
+
+.home {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.home h1 {
+    font-family: 'Roboto-Bold';
+    font-size: 4em;
+    color: var(--color-font-header);
+    width: 65%;
+}
+
+.home p {
+    font-family: 'Roboto-Light';
+    font-size: 1.25em;
+    color: var(--color-font-black);
+    width: 60%;
+    padding-top: 1em;
+}
+
+.home p img {
+    width: 6%;
+}
+
+.home a {
+    font-family: 'Roboto-Bold';
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--color-link-button);
+
+}
+
+
+
+/* header animation */
+
+.illus img:nth-child(1) {
+    animation: img 2s linear 0s infinite forwards;
+}
+@keyframes img {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translate(0);
+    } 
+}
+
+/* main */
+/* section 1 images */
+
+.sec1__images img {
+    width: 100%;
+}
+
+/* section 2 ideas */
+
+.sec2__ideas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10em;
+}
+
+.sec2__ideas img {
+    width: 25%;
+}
+
+.sec2__ideas h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 3em;
+    color: var(--color-font-black);
+    width: 25%;
+}
+
+.sec2__ideas p {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+    line-height: 2;
+    color: var(--color-font-black);
+    width: 40%;
+}
+
+/* section 3 about */
+
+.sec3__about {
+    margin: 10em;
+}
+
+.sec3__about h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 3em;
+    color: var(--color-font-black);
+    width: 80%;
+    padding-left: 5em;
+}
+
+.sec3__about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.sec3__about span img {
+    width: 10%;
+}
+
+.sec3__about h4 {
+    font-family: 'Roboto-Bold';
+    font-size: 1em;
+    color: var(--color-font-black);
+    width: 25%;
+}
+
+.sec3__about p {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+    color: var(--color-font-black);
+    width: 25%;
+}
+
+/* section 4 challenge */
+
+.sec4__challenge {
+    margin: 10em;
+    text-align: center;
+}
+
+.sec4__challenge h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 3em;
+    color: var(--color-font-black);
+}
+
+.sec4__challenge p {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+    color: var(--color-font-black);
+    width: 50%;
+}
+
+.sec4__challenge img {
+    width: 5%;
+}
+
+.picBic img {
+    width: 30%;
+}
+
+.steps13 {
+
+}
+
+/* media querie mobil */
+
+@media only screen and (max-width: 375px) {
+    .ec2__ideas {
+
+    }
+}
