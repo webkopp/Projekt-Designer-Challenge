@@ -207,14 +207,14 @@ header {
 /* section 4 challenge */
 
 .sec4__challenge {
-    margin: 10em;
-    text-align: center;
+    background-color: lightblue;
 }
 
 .sec4__challenge h2 {
     font-family: 'Roboto-Bold';
     font-size: 3em;
     color: var(--color-font-black);
+    text-align: center;
 }
 
 .sec4__challenge p {
@@ -222,6 +222,7 @@ header {
     font-size: 1em;
     color: var(--color-font-black);
     width: 50%;
+    text-align: center;
 }
 
 .sec4__challenge img {
@@ -232,10 +233,41 @@ header {
     width: 30%;
 }
 
-.steps13, .steps24 h3 {
+article {
+    display: flex;
+}
+
+article h3 {
     font-family: 'Roboto-Bold';
     font-size: 3em;
     color: var(--color-numbers);
+}
+
+article h4 {
+    font-family: 'Roboto-Bold';
+    font-size: 1.5em;
+    color: var(--color-font-black);
+}
+
+article p {
+    font-family: 'Roboto-Light';
+    font-size: 1em;
+    text-align: left;
+    color: var(--color-font-black);
+    margin-top: 2em;
+}
+
+.steps13 {
+    display: flex;
+}
+
+.steps24 {
+    display: flex;
+}
+
+.stepbystep {
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer */
